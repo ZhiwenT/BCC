@@ -1,7 +1,7 @@
 Type: Package
 Package: BCClong
 Title: Bayesian Consensus Clustering for Multiple Longitudinal Features
-Version: 1.0.1
+Version: 1.0.3
 Authors@R: c(
     person("Zhiwen", "Tan", , "21zt9@queensu.ca", role = c("aut", "cre")),
     person("Zihang", "Lu", , "zihang.lu@queensu.ca", role = "ctb"),
@@ -43,7 +43,9 @@ Imports:
     Rcpp (>= 1.0.9),
     Rmpfr,
     stats,
-    truncdist
+    truncdist,
+    abind,
+    gridExtra
 Suggests: 
     cowplot,
     joineRML,
@@ -62,4 +64,4 @@ Encoding: UTF-8
 URL: https://github.com/ZhiwenT/BCClong
 BugReports:  https://github.com/ZhiwenT/BCClong/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1

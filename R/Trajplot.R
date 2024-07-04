@@ -5,7 +5,7 @@
 #' @param fit an objective output from BCC.multi() function
 #' @param feature.ind a numeric value indicating which feature to plot.
 #'                     The number indicates the order of the feature specified
-#'                     in mydat argument of the BCC.multi()() function
+#'                     in mydat argument of the BCC.multi() function
 #' @param which.cluster a character value: "global" or "local", indicating
 #'                      whether to plot the trajectory by global cluster or
 #'                      local cluster indices
@@ -13,11 +13,11 @@
 #' @param xlab Label for x axis
 #' @param ylab Label for y axis
 #' @param color Color for the trajplot
-#' @return void function with no return value, only show plots
+#' @return A plot object
 #' @examples
 #' # get data from the package
-#' filePath <- system.file("extdata", "epil1.rds", package = "BCClong")
-#' fit.BCC <- readRDS(filePath)
+#' data(epil1)
+#' fit.BCC <- epil1
 #' # for local cluster
 #' trajplot(fit=fit.BCC,feature.ind=1, which.cluster = "local.cluster",
 #'          title= "Local Clustering",xlab="time (months)",
